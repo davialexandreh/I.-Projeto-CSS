@@ -1,6 +1,5 @@
 * {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat';
 
     /*ZERAR CONFIGURAÇÕES DE MARGIN E PADDING*/
     margin: 0px;
@@ -10,7 +9,7 @@
 }
 
 header{
-    margin: /*TÉCNICA DO RELÓGIO*/ 44px 0px 144px 76px;
+    margin: /*TÉCNICA DO RELÓGIO*/ 44px 0px 80px 75px;
 }
 
 .link-header{
@@ -65,6 +64,7 @@ p{
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
+    text-align: justify;
     color: #848484;
     width: 515px; /*com isso o parágrafo cresce em altura e não em largura*/
     margin-top: 32px;
@@ -83,4 +83,41 @@ p{
     border: none;
     cursor: pointer;
     filter: drop-shadow(black);
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        display: inline-flex;
+        margin: 44px 76px;
+    }
+
+    main{
+        margin: 0 50px;
+        display: block;
+    }
+
+    section{
+        margin: 0 50%; 
+    }
+
+    img{
+        display: block;
+        margin: 200px auto 0 auto;
+    }
+
+    h1{
+        text-align: center;
+        width: 500px;
+        margin-top: 150px;
+    }
+
+    p{
+        font-size: 30px;
+        text-align: justify;
+    }
+
+    .button-main{
+        margin: 150px auto;
+        display: block;
+    }
 }
